@@ -1,0 +1,158 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.neutrondrive",
+    "module": "NeutronDrive",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "NeutronDrive-1.0.0.jar",
+          "url": "NeutronDrive-1.0.0.jar",
+          "size": 31286,
+          "sha512": "bc1ae645b11dbfe2cffb74e3887756c1cf2249d8d5ff3d0a4648c332f1736888b9d7432b649a3c634c46a66c8ae12ca260092cd147da71738ec02f603b212011",
+          "sha256": "de559d9965ff4c40c58a913446c6c12857425d04a3a1935c2d464435529b9f39",
+          "sha1": "ac34048eaad9307b5123f3b46e27c60649316621",
+          "md5": "fc1a65ca3734f49a7a89972dddaa91d9"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "edu.wpi.first.wpilibj",
+          "module": "wpilibj-java",
+          "version": {
+            "requires": "2026.2.1"
+          }
+        },
+        {
+          "group": "edu.wpi.first.wpimath",
+          "module": "wpimath-java",
+          "version": {
+            "requires": "2026.2.1"
+          }
+        },
+        {
+          "group": "edu.wpi.first.hal",
+          "module": "hal-java",
+          "version": {
+            "requires": "2026.2.1"
+          }
+        },
+        {
+          "group": "edu.wpi.first.wpiutil",
+          "module": "wpiutil-java",
+          "version": {
+            "requires": "2026.2.1"
+          }
+        },
+        {
+          "group": "edu.wpi.first.wpiunits",
+          "module": "wpiunits-java",
+          "version": {
+            "requires": "2026.2.1"
+          }
+        },
+        {
+          "group": "edu.wpi.first.wpilibNewCommands",
+          "module": "wpilibNewCommands-java",
+          "version": {
+            "requires": "2026.2.1"
+          }
+        },
+        {
+          "group": "com.ctre.phoenix6",
+          "module": "wpiapi-java",
+          "version": {
+            "requires": "26.1.1"
+          }
+        },
+        {
+          "group": "com.revrobotics.frc",
+          "module": "REVLib-java",
+          "version": {
+            "requires": "2026.0.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "NeutronDrive-1.0.0.jar",
+          "url": "NeutronDrive-1.0.0.jar",
+          "size": 31286,
+          "sha512": "bc1ae645b11dbfe2cffb74e3887756c1cf2249d8d5ff3d0a4648c332f1736888b9d7432b649a3c634c46a66c8ae12ca260092cd147da71738ec02f603b212011",
+          "sha256": "de559d9965ff4c40c58a913446c6c12857425d04a3a1935c2d464435529b9f39",
+          "sha1": "ac34048eaad9307b5123f3b46e27c60649316621",
+          "md5": "fc1a65ca3734f49a7a89972dddaa91d9"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "NeutronDrive-1.0.0-sources.jar",
+          "url": "NeutronDrive-1.0.0-sources.jar",
+          "size": 16285,
+          "sha512": "05f73664856a22d6f9aa43e714d6d35326ba2de16d498b0b5fa4e30e50a14ec42d7dd667a0af9fb7f8dff18d247514bdae3052e1580beb7a0351ad2c3c26310d",
+          "sha256": "4f4f87a26b6e2fffc4a18d64fa31146f25e72371e05224b21e2931768d3a6919",
+          "sha1": "336dcef363ef32a35ee83e94afebbf3370afe7cc",
+          "md5": "a018ea19978d4f8baaa2670821f65c67"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "NeutronDrive-1.0.0-javadoc.jar",
+          "url": "NeutronDrive-1.0.0-javadoc.jar",
+          "size": 165217,
+          "sha512": "b297f6d2d95bd0ddca416236a6a8b9028143f80e081ced410dbe82b42cbaa6fed6756eb8bd69ccf9fafd50074dc181613cc7e5661ba8220a238c27d55491f049",
+          "sha256": "18596276dd8755aca299375b3ffcf8fa3dc02a9a4b72729f0e42de360660c2a0",
+          "sha1": "8f1d48dad2b1cee0ceea97e2a0acbb18725c0580",
+          "md5": "6aaca26a480d78d519b5284537675f96"
+        }
+      ]
+    }
+  ]
+}

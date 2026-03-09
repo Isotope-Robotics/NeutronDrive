@@ -1,0 +1,20 @@
+{
+  "fileName": "NeutronDrive.json",
+  "name": "NeutronDrive",
+  "version": "1.0.0",
+  "uuid": "f3a9d2c1-4b7e-4f81-9c3a-2d8e5f6b1a0c",
+  "frcYear": "2026",
+  "mavenUrls": [
+    "https://isotope-robotics.github.io/NeutronDrive/repo"
+  ],
+  "jsonUrl": "https://isotope-robotics.github.io/NeutronDrive/NeutronDrive.json",
+  "javaDependencies": [
+    {
+      "groupId": "com.neutrondrive",
+      "artifactId": "NeutronDrive",
+      "version": "1.0.0"
+    }
+  ],
+  "jniDependencies": [],
+  "cppDependencies": []
+}
