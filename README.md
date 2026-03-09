@@ -1,6 +1,9 @@
 # NeutronDrive
 Java library for Swerve Drive without all the complexity
 
+## Latest Release
+Download latest release: https://isotope-robotics.github.io/NeutronDrive/NeutronDrive.json
+
 ## Required Vendor Libraries
 
 NeutronDrive depends on the following vendor libraries. They must be installed in your robot project as vendordeps before NeutronDrive will work.
