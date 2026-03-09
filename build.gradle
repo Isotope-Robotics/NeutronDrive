@@ -57,4 +57,9 @@ publishing {
             from components.java
         }
     }
+    repositories {
+        maven {
+            url = uri("${rootDir}/repo")
+        }
+    }
 }
