@@ -28,18 +28,18 @@ def phoenixVersion = '26.1.1'
 def revlibVersion = '2026.0.4'
 
 dependencies {
-    implementation "edu.wpi.first.wpilibj:wpilibj-java:${wpilibVersion}"
-    implementation "edu.wpi.first.wpimath:wpimath-java:${wpilibVersion}"
-    implementation "edu.wpi.first.hal:hal-java:${wpilibVersion}"
-    implementation "edu.wpi.first.wpiutil:wpiutil-java:${wpilibVersion}"
-    implementation "edu.wpi.first.wpiunits:wpiunits-java:${wpilibVersion}"
-    implementation "edu.wpi.first.wpilibNewCommands:wpilibNewCommands-java:${wpilibVersion}"
+    compileOnly "edu.wpi.first.wpilibj:wpilibj-java:${wpilibVersion}"
+    compileOnly "edu.wpi.first.wpimath:wpimath-java:${wpilibVersion}"
+    compileOnly "edu.wpi.first.hal:hal-java:${wpilibVersion}"
+    compileOnly "edu.wpi.first.wpiutil:wpiutil-java:${wpilibVersion}"
+    compileOnly "edu.wpi.first.wpiunits:wpiunits-java:${wpilibVersion}"
+    compileOnly "edu.wpi.first.wpilibNewCommands:wpilibNewCommands-java:${wpilibVersion}"
 
     // CTRE Phoenix 6 (TalonFX, CANcoder, Pigeon2)
-    implementation "com.ctre.phoenix6:wpiapi-java:${phoenixVersion}"
+    compileOnly "com.ctre.phoenix6:wpiapi-java:${phoenixVersion}"
 
     // REV Robotics (SparkMax, SparkFlex, Through Bore Encoder)
-    implementation "com.revrobotics.frc:REVLib-java:${revlibVersion}"
+    compileOnly "com.revrobotics.frc:REVLib-java:${revlibVersion}"
 }
 
 jar {
