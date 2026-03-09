@@ -1,0 +1,60 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group = 'com.neutrondrive'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+    withSourcesJar()
+    withJavadocJar()
+}
+
+repositories {
+    mavenCentral()
+    // Local WPILib 2026 install (faster, no download needed)
+    maven { url 'file:///C:/Users/Public/wpilib/2026/maven' }
+    maven { url 'https://frcmaven.wpi.edu/release' }
+    maven { url 'https://maven.ctr-electronics.com/release' }
+    maven { url 'https://maven.revrobotics.com/' }
+}
+
+// Update these each season
+def wpilibVersion = '2026.2.1'
+def phoenixVersion = '26.1.1'
+def revlibVersion = '2026.0.4'
+
+dependencies {
+    implementation "edu.wpi.first.wpilibj:wpilibj-java:${wpilibVersion}"
+    implementation "edu.wpi.first.wpimath:wpimath-java:${wpilibVersion}"
+    implementation "edu.wpi.first.hal:hal-java:${wpilibVersion}"
+    implementation "edu.wpi.first.wpiutil:wpiutil-java:${wpilibVersion}"
+    implementation "edu.wpi.first.wpiunits:wpiunits-java:${wpilibVersion}"
+    implementation "edu.wpi.first.wpilibNewCommands:wpilibNewCommands-java:${wpilibVersion}"
+
+    // CTRE Phoenix 6 (TalonFX, CANcoder, Pigeon2)
+    implementation "com.ctre.phoenix6:wpiapi-java:${phoenixVersion}"
+
+    // REV Robotics (SparkMax, SparkFlex, Through Bore Encoder)
+    implementation "com.revrobotics.frc:REVLib-java:${revlibVersion}"
+}
+
+jar {
+    manifest {
+        attributes(
+            'Implementation-Title': 'NeutronDrive',
+            'Implementation-Version': version
+        )
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
